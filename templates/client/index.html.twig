@@ -28,7 +28,8 @@
                     <td>{{ client.Nom }}</td>
                     <td>{{ client.Prenom }}</td>
                     <td>{{ client.email }}</td>
-                    <td>{{ client.IBAN }}</td>
+                    {{ client.IBAN}}
+                    <td>{{ client.IBAN }} </td>
                     <td>
                         <a href="{{ path("modifier",{"id": client.id}) }}"
                            class="btn btn-outline-primary">
